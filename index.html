@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit Kumar Sharma - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div id="themeToggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Voice Command Indicator -->
+    <div id="voiceIndicator" class="voice-indicator">
+        <i class="fas fa-microphone"></i>
+        <span>Say "Hey Amit" to activate voice commands</span>
+    </div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">AKS</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Amit Kumar Sharma</span>
+                    </h1>
+                    <p class="hero-subtitle">Computer Science & Engineering Student</p>
+                    <p class="hero-description">
+                        Passionate about solving complex problems through code and building innovative solutions
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="downloadResume()">
+                            <i class="fas fa-download"></i> Download Resume
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </button>
+                        <button class="btn btn-outline" onclick="startTour()">
+                            <i class="fas fa-play"></i> Take a Tour
+                        </button>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/amit-kumar-sharma" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/amitsharma4-5" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://leetcode.com/u/amitsharma4-5" target="_blank" class="social-link">
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-img">
+                            <img src="Amit_Photo_Updated.jpg" alt="Amit Kumar Sharma" class="profile-photo">
+                            <div class="profile-overlay"></div>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-element" style="--delay: 0s">💻</div>
+                            <div class="floating-element" style="--delay: 1s">🚀</div>
+                            <div class="floating-element" style="--delay: 2s">⚡</div>
+                            <div class="floating-element" style="--delay: 3s">🎯</div>
+                            <div class="floating-element" style="--delay: 4s">📱</div>
+                        </div>
+                        <div class="profile-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a motivated Computer Science and Engineering undergraduate at Parul University with a strong passion for 
+                        problem-solving and software development. With a CGPA of 8.63 and over 260+ solved DSA problems on LeetCode, 
+                        I'm constantly pushing myself to learn and grow.
+                    </p>
+                    <div class="stats">
+                        <div class="stat" data-target="260">
+                            <h3 class="counter">0</h3>
+                            <p>LeetCode Problems</p>
+                        </div>
+                        <div class="stat" data-target="8.63">
+                            <h3 class="counter">0</h3>
+                            <p>CGPA</p>
+                        </div>
+                        <div class="stat" data-target="2027">
+                            <h3 class="counter">0</h3>
+                            <p>Expected Graduation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-photo-container">
+                        <img src="Amit_Photo_Updated.jpg" alt="Amit Kumar Sharma" class="about-photo">
+                        <div class="photo-frame"></div>
+                    </div>
+                    <div class="education-card">
+                        <h3>Education</h3>
+                        <div class="education-item">
+                            <h4>Bachelor of Technology (B.Tech)</h4>
+                            <p>Computer Science & Engineering</p>
+                            <p>Parul University, Vadodara, Gujarat</p>
+                            <p>CGPA: 8.63 | Expected: 2027</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="90">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                            <div class="skill-progress">
+                                <div class="skill-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                            <div class="skill-progress">
+                                <div class="skill-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <i class="fas fa-code"></i>
+                            <span>C</span>
+                            <div class="skill-progress">
+                                <div class="skill-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="95">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                            <div class="skill-progress">
+                                <div class="skill-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="90">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS</span>
+                            <div class="skill-progress">
+                                <div class="skill-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="75">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                            <div class="skill-progress">
+                                <div class="skill-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="70">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                            <div class="skill-progress">
+                                <div class="skill-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="65">
+                            <i class="fas fa-leaf"></i>
+                            <span>MongoDB</span>
+                            <div class="skill-progress">
+                                <div class="skill-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Concepts</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="85">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                            <div class="skill-progress">
+                                <div class="skill-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="90">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                            <div class="skill-progress">
+                                <div class="skill-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="88">
+                            <i class="fas fa-sitemap"></i>
+                            <span>DSA</span>
+                            <div class="skill-progress">
+                                <div class="skill-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="75">
+                            <i class="fas fa-server"></i>
+                            <span>DBMS</span>
+                            <div class="skill-progress">
+                                <div class="skill-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements & Certifications</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>LeetCode Achievements</h3>
+                    <p>Solved 260+ problems with consistent daily practice</p>
+                    <div class="achievement-badge">Problem Solver</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Academic Excellence</h3>
+                    <p>Maintaining 8.63 CGPA in Computer Science Engineering</p>
+                    <div class="achievement-badge">Top Performer</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>Open Source Contributor</h3>
+                    <p>Active GitHub contributor with multiple repositories</p>
+                    <div class="achievement-badge">Developer</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI/ML Enthusiast</h3>
+                    <p>Developed innovative AI solutions for real-world problems</p>
+                    <div class="achievement-badge">Innovator</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Sectionon -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-seedling"></i>
+                        <h3>AI-Powered Crop Health Diagnosis</h3>
+                    </div>
+                    <p>
+                        Designed an image-based system to detect crop nutrient deficiencies (Nitrogen, Phosphorus, Potassium) 
+                        using leaf images to support accurate fertilizer decisions.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">AI/ML</span>
+                        <span class="tech-tag">Image Processing</span>
+                        <span class="tech-tag">Agriculture</span>
+                    </div>
+                    <div class="project-buttons">
+                        <button class="btn btn-small" onclick="showProjectDetails('crop')">
+                            <i class="fas fa-eye"></i> View Details
+                        </button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Smart Rural Health & AI-IoT System</h3>
+                    </div>
+                    <p>
+                        Proposed an AI-driven healthcare platform for rural communities featuring disease prediction, 
+                        health monitoring, and chatbot-based medical guidance with emphasis on data privacy.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">AI/ML</span>
+                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag">Healthcare</span>
+                        <span class="tech-tag">Chatbot</span>
+                    </div>
+                    <div class="project-buttons">
+                        <button class="btn btn-small" onclick="showProjectDetails('health')">
+                            <i class="fas fa-eye"></i> View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Laboratory Technician (Intern)</h3>
+                        <h4>Parul University, Vadodara, Gujarat</h4>
+                        <p class="timeline-date">Feb 2025 – Present</p>
+                        <ul>
+                            <li>Assisted in preparation, calibration, and maintenance of laboratory equipment</li>
+                            <li>Conducted experiments, recorded observations, and supported result analysis</li>
+                            <li>Ensured compliance with laboratory safety standards and SOPs</li>
+                            <li>Supported faculty and students during practical sessions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What People Say</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <p>"Amit is a dedicated student with exceptional problem-solving skills. His work in the laboratory shows great attention to detail and professionalism."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Dr. Rajesh Patel</h4>
+                            <p>Lab Supervisor, Parul University</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"His AI projects demonstrate innovative thinking and practical application of machine learning concepts. A promising young developer."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Prof. Priya Sharma</h4>
+                            <p>AI/ML Faculty, Parul University</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Amit's consistent performance in DSA and his active participation in coding challenges make him stand out among his peers."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Mr. Vikash Kumar</h4>
+                            <p>Programming Instructor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Vadodara, Gujarat, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 9918675501</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>amit04.5sharma@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Amit Kumar Sharma. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://linkedin.com/in/amit-kumar-sharma" target="_blank">LinkedIn</a>
+                <a href="https://github.com/amitsharma4-5" target="_blank">GitHub</a>
+                <a href="https://leetcode.com/u/amitsharma4-5" target="_blank">LeetCode</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loader">
+            <div class="loader-text">AKS</div>
+            <div class="loader-progress"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
