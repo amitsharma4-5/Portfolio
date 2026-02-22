@@ -1,13 +1,13 @@
-# OS files
+# Git ignore file
+# Ignore node_modules if any
+node_modules/
+
+# Ignore OS files
 .DS_Store
 Thumbs.db
 
-# Editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Temporary files
-*.tmp
+# Ignore log files
 *.log
+
+# Ignore temporary files
+*.tmp
